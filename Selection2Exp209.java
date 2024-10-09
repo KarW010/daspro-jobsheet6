@@ -14,8 +14,12 @@ public class Selection2Exp209 {
         if(totalAngle == 180)
             if(angle1==90 || angle2==90 || angle3==90)
                 System.out.print("Right triangle");
+            else if(angle1 == angle2 && angle2 == angle3)
+                System.out.print("Equilateral triangle");
+            else if(angle1 == angle2 || angle2 == angle3 || angle3 == angle1)
+                System.out.print("Isosceles triangle");
             else
-                System.out.print("Not a right triangle");
+                System.out.print("Not a valid triangle");
         else
             System.out.print("Not a triangle");
 
