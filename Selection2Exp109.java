@@ -5,11 +5,10 @@ public class Selection2Exp109 {
         System.out.print("Input the year : ");
         int year = input09.nextInt();
 
-        if(year%4 == 0)
-            if(year%100 != 0)
-                System.out.println("Leap year");
-        else
+        if(year%4 == 0 && year%100 == 0 && year%400 == 0){
+            System.out.println("Leap year");
+        }else {
             System.out.println("Not a leap year");
-
+        }
     }
 }
